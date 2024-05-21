@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+  <link rel="stylesheet"
+  href="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.css"
+  integrity="sha384-47VeTDpmy4yT21gKPXQcLQYQZwlmz27gEH5NTrOmTk3G/SGvMyltclOW/Q8uE+sL"
+  crossorigin="anonymous">
+  <script src="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.js"
+  integrity="sha384-/KwQCjA1GWovZNV3QDVtvSMDzO4reGgarF/RqHipr7hIUElH3r5zNl9WEPPOBRIF"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="grid grid-cols-1 gap-4 place-content-center">
+    <div class="m-auto my-5">
+      <input type="file" id="uploader">
+    </div>
+    <div class="m-auto my-5">
+      <div>
+        <p>Input Image</p>
+        <img id="imgInput" style="max-width:100px;">
+      </div>
+    </div>
+
+    <div class="m-auto my-5" id="board1" style="width: 300px"></div>
+  </div>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
