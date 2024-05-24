@@ -141,3 +141,24 @@ export const descriptive_chessboard = build_position_map(descriptive_x, descript
 export const representational_board = build_start_board()
 export const starting_pieces_states = build_initial_pieces_state()
 
+
+const moves = `1 P-K4 P-K4
+2 N-KB3 N-QB3
+3 B-B4 N-B3
+4 N-N5 P-Q4
+5 PXP NxP
+6 NXBP KXN
+7 Q-B3+ K-K3
+8 N-B3 N3-K2
+9 P-Q4 P-B3
+10 B-KN5 P-KR3
+12 0-0-0 R-B1
+13 Q-K4 RXP?
+14 PXP B-N4+
+15 K-N1 R-Q7
+16 P-KR4 RXR+
+17 RxR BxP
+18 NXN PXN
+19 RxP Q-N4
+20 R-Q6+ K-K2
+21 R-KN6 1-0`
