@@ -103,6 +103,7 @@ const build_initial_pieces_state = (whites_up = false) => {
   for (const [index, p] of first_line_pieces.entries()) {
     const a = arraypos_to_notation((8 - 7) * 8 + index)
     res[p + (whites_up ? 'w' : 'b')] = {
+      n_movements: 0,
       arr_index: (8 - 7) * 8 + index,
       algebraic_position: a.algebraic,
       descriptive_posiion: a.descriptive,
@@ -110,6 +111,7 @@ const build_initial_pieces_state = (whites_up = false) => {
     }
     const b = arraypos_to_notation((8 - 2) * 8 + index)
     res[p + (whites_up ? 'b' : 'w')] = {
+      n_movements: 0,
       arr_index: (8 - 2) * 8 + index,
       algebraic_position: b.algebraic,
       descriptive_posiion: b.descriptive,
@@ -119,6 +121,7 @@ const build_initial_pieces_state = (whites_up = false) => {
   for (const [index, p] of second_line_pieces.entries()) {
     const a = arraypos_to_notation((8 - 8) * 8 + index)
     res[p + (whites_up ? 'w' : 'b')] = {
+      n_movements: 0,
       arr_index: (8 - 8) * 8 + index,
       algebraic_position: a.algebraic,
       descriptive_posiion: a.descriptive,
@@ -127,6 +130,7 @@ const build_initial_pieces_state = (whites_up = false) => {
 
     const b = arraypos_to_notation((8 - 1) * 8 + index)
     res[p + (whites_up ? 'b' : 'w')] = {
+      n_movements: 0,
       arr_index: (8 - 1) * 8 + index,
       algebraic_position: b.algebraic,
       descriptive_posiion: b.descriptive,
