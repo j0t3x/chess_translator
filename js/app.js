@@ -34,7 +34,8 @@ const recognize_vision = async () => {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     headers: {
       "Content-Type": "application/json",
-      "x-goog-user-project": "backend-300222",
+      "x-goog-user-project": process.env.PROJECT_ID,
+      "Authorization": `Bearer ${process.env.TOKEN}`
     },
     body: JSON.stringify({
       "requests": [
